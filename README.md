@@ -1,2 +1,2 @@
-# ajirjees.github.io
-repo for hosting my website
+# Personal-Website
+My personal website

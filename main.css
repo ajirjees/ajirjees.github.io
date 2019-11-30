@@ -1,0 +1,221 @@
+/* Make sure that padding and width for all elements stays in place */
+* {
+  box-sizing: border-box;
+}
+/*Force Row To Self-Clear its Children*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*Use CSS attribute selector to apply a style to a group of classes*/
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+.header {
+  background-color: #20B2AA;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+}
+/* Style unordered list*/
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* Style the nav links */
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #BDB76B;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+/* Style tag a */
+.menu li a {
+    text-decoration: none;
+}
+/* Change color on hover */
+.menu li:hover {
+  background-color: #20B2AA;
+}
+/* Style aside */
+.aside {
+  background-color: #BDB76B;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+/* Style the image by using unique ID */
+#img {
+    background-color: #BDB76B;
+    padding: 15px;
+    text-align: center;
+    max-height: 100%; 
+    max-width: 100%;
+}
+/* Style the footer */
+footer {
+  background-color: #20B2AA;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+/*hide the print notice*/
+#printnotice {
+  display: none;
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+ /* For tablets: */
+@media only screen and (min-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+ /* For desktop: */
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+/*Style table ID*/
+#careerTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+/*Style td*/
+#careerTable td{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+/*Specify a background color for every <tr> element that is the second child of its parent*/
+#careerTable tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+/* Change color on hover */
+#careerTable tr:hover {
+    background-color: #20B2AA;
+}
+/*Style th*/
+#careerTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #BDB76B;
+  color: white;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+/*Style video*/
+#video {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #20B2AA;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style the reset button with a specific background color etc */
+input[type=reset] {
+  background-color: #20B2AA;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add a background color and some padding around the form */
+.formContact {
+  border-radius: 5px;
+  background-color: #BDB76B ;
+  padding: 20px;
+
+}
+
+/*Style button*/
+button{
+  background-color: #BDB76B;
+
+}
+
+.hidden {
+  display: none;
+}
+#records_table {
+  border-collapse: collapse;
+  width: 100%;
+}
+/*Style td*/
+#records_table td{
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 8px;
+}
+/*Specify a background color for every <tr> element that is the second child of its parent*/
+#records_table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+/* Change color on hover */
+#records_table tr:hover {
+    background-color: #20B2AA;
+}
+/*Style th*/
+#records_table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #BDB76B;
+  color: white;
+  border: 1px solid #ddd;
+  padding: 8px;
+}

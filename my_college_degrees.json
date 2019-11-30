@@ -1,0 +1,14 @@
+[
+	{
+		"school": "Boston University",
+		"program": "Master of science in software development",
+		"type": "MS",
+		"year_conferred": "January 2020"
+	},
+	{
+		"school": "Alrafidain University",
+		"program": "Bachelor's degree of software engineering",
+		"type": "BS",
+		"year_conferred": "July 2010"
+	}
+]
