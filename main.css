@@ -191,26 +191,26 @@ button{
 .hidden {
   display: none;
 }
-#records_table {
+#degree_table {
   border-collapse: collapse;
   width: 100%;
 }
 /*Style td*/
-#records_table td{
+#degree_table td{
   border: 1px solid #ddd;
   text-align: center;
   padding: 8px;
 }
 /*Specify a background color for every <tr> element that is the second child of its parent*/
-#records_table tr:nth-child(even){
+#degree_table tr:nth-child(even){
     background-color: #f2f2f2;
 }
 /* Change color on hover */
-#records_table tr:hover {
+#degree_table tr:hover {
     background-color: #20B2AA;
 }
 /*Style th*/
-#records_table th {
+#degree_table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
