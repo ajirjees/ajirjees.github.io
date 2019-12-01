@@ -1,7 +1,6 @@
 function myFunction () {
 	var httpRequest;
 	makeRequest('my_college_degrees.json');
-	$("table").removeClass("hidden");
 	//create a new XMLHttpRequest object
 	function makeRequest(url) {
 		httpRequest = new XMLHttpRequest();
@@ -17,6 +16,8 @@ function myFunction () {
 	function serverResponse() {
 		if (httpRequest.readyState === XMLHttpRequest.DONE) {
 			if (httpRequest.status === 200 && this.readyState == 4) {
+				//remove class hidden when AJAX call success
+				$('table').removeClass('hidden');
 				//if successful, parses a JSON string
 				var obj = $.parseJSON(this.responseText);
 				//function insert HTML element at the end of the selected element. 
