@@ -1,3 +1,3 @@
-# Personal-Website
-My personal website https://ajirjees.github.io./
+# AJAX and JSON
+https://ajirjees.github.io./
 
